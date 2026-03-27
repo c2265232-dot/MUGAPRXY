@@ -1,1 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Proxy Engine</title>
+</head>
+<body>
 
+<h1>Proxy Engine</h1>
+
+<input id="url" placeholder="https://example.com" style="width:300px">
+<button onclick="go()">Go</button>
+
+<script>
+function go() {
+  const url = document.getElementById("url").value;
+  window.location = "/proxy?url=" + encodeURIComponent(url);
+}
+</script>
+
+</body>
+</html>
